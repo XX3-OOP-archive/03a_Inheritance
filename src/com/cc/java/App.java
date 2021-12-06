@@ -4,24 +4,24 @@ public class App {
     
     public static void main(String[] args) {
 
-        Cat cat1 = new Cat("Grizabella", "white", 29, true); // Klasse --> Objekt / Instanz
+        Cat cat = new Cat("Grizabella", "white", 29); // Klasse --> Objekt / Instanz
         
-        output("Name: " + cat1.getStringAttributes("#name"));
-        output("Fellfarbe: " + cat1.getStringAttributes("#color"));
+        output("Name: " + cat.getStringAttributes("#name"));
+        output("Fellfarbe: " + cat.getStringAttributes("#color"));
 
-        output("Alter: " + cat1.getAge());
-        output("Alter: " + cat1.getAge());
-        output("Alter: " + cat1.getAge());
-        output("Alter: " + cat1.getAge());
+        output("Alter: " + cat.getAge());
+        output("Alter: " + cat.getAge());
+        output("Alter: " + cat.getAge());
+        output("Alter: " + cat.getAge());
 
         output("------------------------");
 
-        Cat cat2 = new Cat("Alonzo", "black", 35, false); // Klasse --> Objekt / Instanz
+        Tomcat tomcat = new Tomcat("Alonzo", "black", 35); // Klasse --> Objekt / Instanz
    
-        output("Name: " + cat2.getStringAttributes("#name"));
-        output("Fellfarbe: " + cat2.getStringAttributes("#color"));
+        output("Name: " + tomcat.getStringAttributes("#name"));
+        output("Fellfarbe: " + tomcat.getStringAttributes("#color"));
 
-        output("Alter: " + cat2.getAge());
+        output("Alter: " + tomcat.getAge());
 
     }
 
