@@ -1,26 +1,10 @@
 package com.cc.java;
 
-public class Tomcat {
-    
-    private String name;
-    private String furColor;
-    private int age;
+public class Tomcat extends SuperCat{
+
   
     public Tomcat(String name, String furColor, int age) {
-        this.name = name;
-        this.furColor = furColor;
-        this.age = age;
-    }
-
-    public String getStringAttributes(String flag){
-        switch (flag) {
-            case "#name":
-                return name;
-            case "#color":
-                return furColor;
-            default:
-                return "#!?";
-        }  
+        super(name, furColor, age);
     }
 
     public String getAge(){
